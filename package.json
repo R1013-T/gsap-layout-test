@@ -13,7 +13,8 @@
     "format:eslint": "bun run lint:eslint --fix",
     "format:prettier": "bun run lint:prettier --write",
     "typecheck": "tsc",
-    "prepare": "bunx simple-git-hooks"
+    "prepare": "husky install",
+    "postinstall": "bunx husky install"
   },
   "dependencies": {
     "react": "^18",
@@ -36,12 +37,8 @@
     "postcss": "^8",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.14",
-    "simple-git-hooks": "^2.11.1",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "./node_modules/.bin/nano-staged",
-    "commit-msg": "bunx commitlint -e"
+    "typescript": "^5",
+    "husky": "^8.0.0"
   }
 }
