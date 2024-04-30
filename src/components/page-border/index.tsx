@@ -3,8 +3,6 @@ import Corner from '../common/corner'
 export default function PageBorder() {
   return (
     <div>
-      <span className="fixed left-0 top-0 z-40 h-dvh w-1.5 bg-primary"></span>
-      <span className="fixed right-0 top-0 z-40 h-dvh w-1.5 bg-primary"></span>
       <span className="fixed right-0 top-0 z-40 h-1.5 w-full bg-primary"></span>
       <span className="fixed bottom-0 right-0 z-40 h-1.5 w-full bg-primary"></span>
       <Corner className="fixed bottom-1.5 left-1.5" />
