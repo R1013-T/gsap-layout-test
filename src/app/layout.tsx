@@ -3,6 +3,9 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Noto_Sans_JP } from 'next/font/google'
 
+import Footer from '@/components/footer'
+import Header from '@/components/header'
+import PageBorder from '@/components/page-border'
 import { cn } from '@/lib/utils'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -24,10 +27,13 @@ export default function RootLayout({
         className={cn(
           inter.className,
           notoSansJP.className,
-          'bg-background font-sans antialiased',
+          'h-dvh overflow-y-auto bg-primary p-1 font-sans font-bold antialiased',
         )}
       >
+        <PageBorder />
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )
