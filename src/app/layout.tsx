@@ -27,12 +27,12 @@ export default function RootLayout({
         className={cn(
           inter.className,
           notoSansJP.className,
-          'h-dvh overflow-y-auto bg-primary p-1 font-sans font-bold antialiased',
+          'h-dvh overflow-y-auto bg-primary p-1.5 font-sans font-bold antialiased',
         )}
       >
         <PageBorder />
         <Header />
-        {children}
+        <article className="overflow-hidden rounded-2xl">{children}</article>
         <Footer />
       </body>
     </html>
